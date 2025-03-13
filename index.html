@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta Data -->
     <meta charset="UTF-8">
+    <!-- For responsive purpose -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>web</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+
+<body style="background-image: url(asset/sky-sunset.jpg);">
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="main-logo">
+            
+        </div>
+        <nav>
+            <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr />
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Content -->
+        <section class="home" id="home">
+            <div class="home_content">
+                <h1>Selamat datang, <span id="output-nama">user</span></h1>
+                <p>Website ini dibuat untuk Mini Project Fundamental Course Software Engineer</p>
+                <button class="btn"><a href="#message-us">Lihat Selengkapnya</a></button>
+                <form id="rubahnama">
+                <br><label for="nama">Nama :</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama" required>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+            <div class="carousel">
+                
+                <div class="carousel_images">
+                    <img src="/asset/img1.png" class="carousel_item active" alt="Gambar 1">
+                    <img src="/asset/img2.png" class="carousel_item" alt="Gambar 2">
+                    <img src="/asset/img3.png" class="carousel_item" alt="Gambar 3">
+                </div>
+                
+            </div>
+        </section>
+
+
+        <!-- Our Profile Content -->
+        <section class="our-profile-content" id="profile">
+            <div class="profile">
+                <span class="subtitle">Profile Saya</span>
+                <h2>Riswanda Danu Fitriawan.</h2>
+                <p>Saya merupakan mahasiswa jurusan informatika yang memiliki hobi dalam bidang fotografi dan sastra</p>
+            </div>
+            <div class="expertise-cards">
+                <div class="expertise-card">
+                    <span class="card-number">01.</span>
+                    <h3>Pendidikan</h3>
+                    <p>Saya menempuh kuliaj dengan jurusan teknik informatika pada sebuah institut swasta yang berada di kota Surabaya</p>
+                </div>
+                <div class="expertise-card">
+                    <span class="card-number">02.</span>
+                    <h3>Fotografi</h3>
+                    <p>saya menekuni hobi fotografi terutama, mobile fotografi sejak di bangku sekolah menengah</p>
+                </div>
+                <div class="expertise-card">
+                    <span class="card-number">03.</span>
+                    <h3>Sastra</h3>
+                    <p>saya memulai hobi saya dalam bidang sastra setelah membaca buku puisi bertajuk "Sesunyi Cahaya" oleh Adi. K</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message Us Content -->
+        <section class="message-section" id="message-us">
+            <div class="form-container">
+                <h2>Message Us</h2>
+                <form id="messageForm">
+                    <label for="name">Nama :</label>
+                    <input type="text" id="name" name="name" placeholder="Nama" required>
     
+                    <label for="dob">Tanggal Lahir :</label>
+                    <input type="date" id="dob" name="dob" required>
+    
+                    <label>Jenis Kelamin :</label>
+                    <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                    <label for="male">Laki-Laki</label>
+                    <input type="radio" id="female" name="gender" value="Perempuan" required>
+                    <label for="female">Perempuan</label>
+    
+                    <label for="message">Pesan :</label>
+                    <textarea id="message" name="message" placeholder="Pesan" required></textarea>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+    
+     
+                <div id="output">
+                    <div class="output-container">
+                        <h2>Hasil Input</h2>
+                        <div id="output">
+                            <p><strong>Current time :</strong> <span id="current-time"></span></p>
+                            <p><strong>Nama :</strong> <span id="output-name"></span></p>
+                            <p><strong>Tanggal Lahir :</strong> <span id="output-dob"></span></p>
+                            <p><strong>Jenis Kelamin :</strong> <span id="output-gender"></span></p>
+                            <p><strong>Pesan :</strong> <span id="output-message"></span></p>
+                        </div>
+                    </div>
+                </div>
+        
+        </section>        
+    </main>
+        
+    <!-- Main Footer -->
+    <footer>
+      <div class="footer">
+        <p>By RDanuF
+          </p>
+      </div>
+  </footer>
+    </main>
 </body>
+<script src="/js/script.js"></script>
 </html>

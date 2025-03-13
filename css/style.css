@@ -1,0 +1,349 @@
+
+/* Sticky Header */
+.main-header {
+    top: 0;
+    left: 0;
+    background: rgba(34, 34, 34, 0.9);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 1000;
+    border-radius: 20px;
+    margin: 0  auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+/* Logo */
+.main-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Menu Toggle (Hidden by Default) */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Home */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.416);
+    border-radius: 20px;
+    margin: 0  auto;
+    max-width: 1200px;
+    width: 84%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.home_content {
+    max-width: 50%;
+}
+
+.home_content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.home_content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.home_content input{
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.home_content .btn {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    background: transparent;
+    cursor: pointer;
+}
+.home_content .btn a{
+    text-decoration: none;
+}
+.home_content .btn:hover{
+    background: #000;
+    color: #fff;
+}
+
+.carousel {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.carousel-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Gambar dalam Carousel */
+.carousel_images {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel_item {
+    min-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: none;
+}
+
+.carousel_item.active {
+    display: block;
+}
+
+/* Tombol Navigasi */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+.main-logo {
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+}
+
+nav>a {
+    padding: 8px;
+    border: 1px solid;
+    text-decoration: none;
+    color: black;
+}
+/* ourprofile content */
+.our-profile-content {
+    display: flex;
+    justify-content: space-between;
+    width: 84%;
+    background-color: rgba(0, 0, 0, 0.416);
+    margin: 0  auto;
+    max-width: 1200px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* bagian kiri */
+.profile{
+    width: 45%;
+}
+.subtitle{
+    color: #ff9800;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.subtitle h2{
+    font-size: 2,5rem;
+    margin: 10px 0;
+}
+.subtitle p{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+.view-services{
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    background: transparent;
+    cursor: pointer;
+}
+.view-services:hover {
+    background: #000;
+    color: #fff;
+}
+/* bagian kanan */
+.expertise-cards {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.expertise-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.expertise-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-number {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+/* message section */
+.message-section {
+    display: flex;
+    justify-content: space-between;
+    width: 84%;
+    background-color: rgba(0, 0, 0, 0.416);
+    margin: 0  auto;
+    max-width: 1200px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.message-section h2{
+    margin-bottom: 15px;
+}
+.message-section form{
+    display: flex;
+    flex-direction: column;
+}
+.message-section label{
+    margin-top: 10px;
+}
+.message-section input,textarea{
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea{
+    height: 80px;
+    resize: none;
+}
+.message-section button{
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+.form-container, .output-container {
+    width: 48%;
+}
+.output-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+/* footer */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.416);
+    margin: 0  auto;
+    max-width: 1200px;
+    width: 90%;
+    border-radius: 12px;
+}
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid rgba(250,250,250,0.15);
+    padding: 50px 0px;
+  }
+  .footer p {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  .footer p a {
+    color: #f5a425;
+  }
+
+  /* Untuk layar HP (max 480px) */
+@media (max-width: 480px) {
+    .home_content h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .expertise-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .message-section {
+        flex-direction: column;
+    }
+
+    .form-container,
+    .output-container {
+        width: 100%;
+    }
+}
